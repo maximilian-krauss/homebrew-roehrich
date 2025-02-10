@@ -5,20 +5,20 @@
 class Roehrich < Formula
   desc ""
   homepage "https://github.com/maximilian-krauss/roehrich"
-  version "0.0.15"
+  version "0.0.16"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/maximilian-krauss/roehrich/releases/download/0.0.15/roehrich_Darwin_x86_64.tar.gz"
-      sha256 "2102c90abf676c86f433481bca59eae5bd9e9846a9c9159379345c4a11323788"
+      url "https://github.com/maximilian-krauss/roehrich/releases/download/0.0.16/roehrich_Darwin_x86_64.tar.gz"
+      sha256 "19fd7425ea5a75389ffa5154f66ef6074333fd59912d4db07c39837f661faaca"
 
       def install
         bin.install "roehrich"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/maximilian-krauss/roehrich/releases/download/0.0.15/roehrich_Darwin_arm64.tar.gz"
-      sha256 "8e9b4ac5ceba6718d3caba07713e38e00d491445cb806708e6edf0f91b7c4f2b"
+      url "https://github.com/maximilian-krauss/roehrich/releases/download/0.0.16/roehrich_Darwin_arm64.tar.gz"
+      sha256 "a9ed62a73a1530b2fc9b961bfa835e7d8dba8a4b7ed17ab070909a4f43d5360c"
 
       def install
         bin.install "roehrich"
@@ -29,8 +29,8 @@ class Roehrich < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/maximilian-krauss/roehrich/releases/download/0.0.15/roehrich_Linux_x86_64.tar.gz"
-        sha256 "9978c8b3458952eaf864eec33deeef2de3e93726c5a653f211c653f89cecc850"
+        url "https://github.com/maximilian-krauss/roehrich/releases/download/0.0.16/roehrich_Linux_x86_64.tar.gz"
+        sha256 "985f6afeceaaa8db79aa36975131c370838f4486eae60077ec48154e0b132d0d"
 
         def install
           bin.install "roehrich"
@@ -39,8 +39,8 @@ class Roehrich < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/maximilian-krauss/roehrich/releases/download/0.0.15/roehrich_Linux_arm64.tar.gz"
-        sha256 "c8ce8ee2a8cdf17e4f9fd494c65026f61bc66cc21353ef205d90d407712cb655"
+        url "https://github.com/maximilian-krauss/roehrich/releases/download/0.0.16/roehrich_Linux_arm64.tar.gz"
+        sha256 "9a6fd21f809ec87a29e249231aed7f0dfc6f0638e9e82a19ab9545e6bca13bdd"
 
         def install
           bin.install "roehrich"
